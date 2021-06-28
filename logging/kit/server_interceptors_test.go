@@ -9,15 +9,15 @@ import (
 
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
-	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	grpc_kit "github.com/grpc-ecosystem/go-grpc-middleware/logging/kit"
-	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
-	pb_testproto "github.com/grpc-ecosystem/go-grpc-middleware/testing/testproto"
+	grpc_middleware "github.com/fabric-creed/go-grpc-middleware"
+	grpc_kit "github.com/fabric-creed/go-grpc-middleware/logging/kit"
+	grpc_ctxtags "github.com/fabric-creed/go-grpc-middleware/tags"
+	pb_testproto "github.com/fabric-creed/go-grpc-middleware/testing/testproto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/codes"
 )
 
 func customCodeToLevel(c codes.Code, logger log.Logger) log.Logger {

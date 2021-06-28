@@ -7,10 +7,10 @@ import (
 	"context"
 
 	"github.com/go-kit/log"
-	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	"github.com/grpc-ecosystem/go-grpc-middleware/logging/kit/ctxkit"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
+	grpc_middleware "github.com/fabric-creed/go-grpc-middleware"
+	"github.com/fabric-creed/go-grpc-middleware/logging/kit/ctxkit"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/codes"
 )
 
 var (

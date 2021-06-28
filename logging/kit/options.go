@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
-	grpc_logging "github.com/grpc-ecosystem/go-grpc-middleware/logging"
-	"google.golang.org/grpc/codes"
+	grpc_logging "github.com/fabric-creed/go-grpc-middleware/logging"
+	"github.com/fabric-creed/grpc/codes"
 )
 
 var (

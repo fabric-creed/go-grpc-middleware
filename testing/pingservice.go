@@ -12,9 +12,9 @@ import (
 	"io"
 	"testing"
 
-	pb_testproto "github.com/grpc-ecosystem/go-grpc-middleware/testing/testproto"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	pb_testproto "github.com/fabric-creed/go-grpc-middleware/testing/testproto"
+	"github.com/fabric-creed/grpc/codes"
+	"github.com/fabric-creed/grpc/status"
 )
 
 const (

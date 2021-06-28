@@ -3,7 +3,7 @@ package ctx_logrus
 import (
 	"context"
 
-	"github.com/grpc-ecosystem/go-grpc-middleware/logging/logrus/ctxlogrus"
+	"github.com/fabric-creed/go-grpc-middleware/logging/logrus/ctxlogrus"
 	"github.com/sirupsen/logrus"
 )
 

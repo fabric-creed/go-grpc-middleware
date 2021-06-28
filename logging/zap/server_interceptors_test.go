@@ -7,17 +7,17 @@ import (
 	"testing"
 	"time"
 
-	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	grpc_zap "github.com/grpc-ecosystem/go-grpc-middleware/logging/zap"
-	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
-	pb_testproto "github.com/grpc-ecosystem/go-grpc-middleware/testing/testproto"
+	grpc_middleware "github.com/fabric-creed/go-grpc-middleware"
+	grpc_zap "github.com/fabric-creed/go-grpc-middleware/logging/zap"
+	grpc_ctxtags "github.com/fabric-creed/go-grpc-middleware/tags"
+	pb_testproto "github.com/fabric-creed/go-grpc-middleware/testing/testproto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/codes"
 )
 
 func customCodeToLevel(c codes.Code) zapcore.Level {

@@ -9,19 +9,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/grpc-ecosystem/go-grpc-middleware/auth"
-	"github.com/grpc-ecosystem/go-grpc-middleware/testing"
-	pb_testproto "github.com/grpc-ecosystem/go-grpc-middleware/testing/testproto"
-	"github.com/grpc-ecosystem/go-grpc-middleware/util/metautils"
+	"github.com/fabric-creed/go-grpc-middleware/auth"
+	"github.com/fabric-creed/go-grpc-middleware/testing"
+	pb_testproto "github.com/fabric-creed/go-grpc-middleware/testing/testproto"
+	"github.com/fabric-creed/go-grpc-middleware/util/metautils"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 	"golang.org/x/oauth2"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/oauth"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/codes"
+	"github.com/fabric-creed/grpc/credentials/oauth"
+	"github.com/fabric-creed/grpc/metadata"
+	"github.com/fabric-creed/grpc/status"
 )
 
 var (

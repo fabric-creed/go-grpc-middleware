@@ -10,9 +10,9 @@ import (
 	"github.com/go-kit/log/level"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
-	grpc_logging "github.com/grpc-ecosystem/go-grpc-middleware/logging"
-	"github.com/grpc-ecosystem/go-grpc-middleware/logging/kit/ctxkit"
-	"google.golang.org/grpc"
+	grpc_logging "github.com/fabric-creed/go-grpc-middleware/logging"
+	"github.com/fabric-creed/go-grpc-middleware/logging/kit/ctxkit"
+	"github.com/fabric-creed/grpc"
 )
 
 var (

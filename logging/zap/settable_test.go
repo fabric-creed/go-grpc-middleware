@@ -3,8 +3,8 @@ package grpc_zap_test
 import (
 	"testing"
 
-	grpc_logsettable "github.com/grpc-ecosystem/go-grpc-middleware/logging/settable"
-	grpc_zap "github.com/grpc-ecosystem/go-grpc-middleware/logging/zap"
+	grpc_logsettable "github.com/fabric-creed/go-grpc-middleware/logging/settable"
+	grpc_zap "github.com/fabric-creed/go-grpc-middleware/logging/zap"
 	"go.uber.org/zap/zaptest"
 )
 

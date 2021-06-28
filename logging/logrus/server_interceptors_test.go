@@ -5,16 +5,16 @@ import (
 	"testing"
 	"time"
 
-	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	grpc_logrus "github.com/grpc-ecosystem/go-grpc-middleware/logging/logrus"
-	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
-	pb_testproto "github.com/grpc-ecosystem/go-grpc-middleware/testing/testproto"
+	grpc_middleware "github.com/fabric-creed/go-grpc-middleware"
+	grpc_logrus "github.com/fabric-creed/go-grpc-middleware/logging/logrus"
+	grpc_ctxtags "github.com/fabric-creed/go-grpc-middleware/tags"
+	pb_testproto "github.com/fabric-creed/go-grpc-middleware/testing/testproto"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/codes"
 )
 
 func TestLogrusServerSuite(t *testing.T) {

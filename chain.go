@@ -8,7 +8,7 @@ package grpc_middleware
 import (
 	"context"
 
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 )
 
 // ChainUnaryServer creates a single interceptor out of a chain of many interceptors.
@@ -17,7 +17,7 @@ import (
 // For example ChainUnaryServer(one, two, three) will execute one before two before three, and three
 // will see context changes of one and two.
 //
-// While this can be useful in some scenarios, it is generally advisable to use google.golang.org/grpc.ChainUnaryInterceptor directly.
+// While this can be useful in some scenarios, it is generally advisable to use github.com/fabric-creed/grpc.ChainUnaryInterceptor directly.
 func ChainUnaryServer(interceptors ...grpc.UnaryServerInterceptor) grpc.UnaryServerInterceptor {
 	n := len(interceptors)
 
@@ -60,7 +60,7 @@ func ChainUnaryServer(interceptors ...grpc.UnaryServerInterceptor) grpc.UnarySer
 // For example ChainUnaryServer(one, two, three) will execute one before two before three.
 // If you want to pass context between interceptors, use WrapServerStream.
 //
-// While this can be useful in some scenarios, it is generally advisable to use google.golang.org/grpc.ChainStreamInterceptor directly.
+// While this can be useful in some scenarios, it is generally advisable to use github.com/fabric-creed/grpc.ChainStreamInterceptor directly.
 func ChainStreamServer(interceptors ...grpc.StreamServerInterceptor) grpc.StreamServerInterceptor {
 	n := len(interceptors)
 
@@ -152,7 +152,7 @@ func ChainStreamClient(interceptors ...grpc.StreamClientInterceptor) grpc.Stream
 // WithUnaryServerChain is a grpc.Server config option that accepts multiple unary interceptors.
 // Basically syntactic sugar.
 //
-// Deprecated: use google.golang.org/grpc.ChainUnaryInterceptor instead.
+// Deprecated: use github.com/fabric-creed/grpc.ChainUnaryInterceptor instead.
 func WithUnaryServerChain(interceptors ...grpc.UnaryServerInterceptor) grpc.ServerOption {
 	return grpc.ChainUnaryInterceptor(interceptors...)
 }
@@ -160,7 +160,7 @@ func WithUnaryServerChain(interceptors ...grpc.UnaryServerInterceptor) grpc.Serv
 // WithStreamServerChain is a grpc.Server config option that accepts multiple stream interceptors.
 // Basically syntactic sugar.
 //
-// Deprecated: use google.golang.org/grpc.ChainStreamInterceptor instead.
+// Deprecated: use github.com/fabric-creed/grpc.ChainStreamInterceptor instead.
 func WithStreamServerChain(interceptors ...grpc.StreamServerInterceptor) grpc.ServerOption {
 	return grpc.ChainStreamInterceptor(interceptors...)
 }

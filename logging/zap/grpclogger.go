@@ -6,9 +6,9 @@ package grpc_zap
 import (
 	"fmt"
 
-	grpc_logsettable "github.com/grpc-ecosystem/go-grpc-middleware/logging/settable"
+	grpc_logsettable "github.com/fabric-creed/go-grpc-middleware/logging/settable"
 	"go.uber.org/zap"
-	"google.golang.org/grpc/grpclog"
+	"github.com/fabric-creed/grpc/grpclog"
 )
 
 // ReplaceGrpcLogger sets the given zap.Logger as a gRPC-level logger.

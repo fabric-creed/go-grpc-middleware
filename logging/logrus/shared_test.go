@@ -7,13 +7,13 @@ import (
 	"io"
 	"testing"
 
-	grpc_logrus "github.com/grpc-ecosystem/go-grpc-middleware/logging/logrus"
-	"github.com/grpc-ecosystem/go-grpc-middleware/logging/logrus/ctxlogrus"
-	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
-	grpc_testing "github.com/grpc-ecosystem/go-grpc-middleware/testing"
-	pb_testproto "github.com/grpc-ecosystem/go-grpc-middleware/testing/testproto"
+	grpc_logrus "github.com/fabric-creed/go-grpc-middleware/logging/logrus"
+	"github.com/fabric-creed/go-grpc-middleware/logging/logrus/ctxlogrus"
+	grpc_ctxtags "github.com/fabric-creed/go-grpc-middleware/tags"
+	grpc_testing "github.com/fabric-creed/go-grpc-middleware/testing"
+	pb_testproto "github.com/fabric-creed/go-grpc-middleware/testing/testproto"
 	"github.com/sirupsen/logrus"
-	"google.golang.org/grpc/codes"
+	"github.com/fabric-creed/grpc/codes"
 )
 
 var (

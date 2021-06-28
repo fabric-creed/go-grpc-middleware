@@ -7,9 +7,9 @@ import (
 	"context"
 	"strings"
 
-	"github.com/grpc-ecosystem/go-grpc-middleware/util/metautils"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	"github.com/fabric-creed/go-grpc-middleware/util/metautils"
+	"github.com/fabric-creed/grpc/codes"
+	"github.com/fabric-creed/grpc/status"
 )
 
 var (

@@ -7,7 +7,7 @@ import (
 	"context"
 
 	"github.com/go-kit/log"
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 )
 
 // UnaryClientInterceptor returns a new unary client interceptor that optionally logs the execution of external gRPC calls.

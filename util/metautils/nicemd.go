@@ -7,7 +7,7 @@ import (
 	"context"
 	"strings"
 
-	"google.golang.org/grpc/metadata"
+	"github.com/fabric-creed/grpc/metadata"
 )
 
 // NiceMD is a convenience wrapper definiting extra functions on the metadata.

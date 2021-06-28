@@ -7,10 +7,10 @@ import (
 	"path"
 	"time"
 
-	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	"github.com/grpc-ecosystem/go-grpc-middleware/logging/logrus/ctxlogrus"
+	grpc_middleware "github.com/fabric-creed/go-grpc-middleware"
+	"github.com/fabric-creed/go-grpc-middleware/logging/logrus/ctxlogrus"
 	"github.com/sirupsen/logrus"
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 )
 
 var (

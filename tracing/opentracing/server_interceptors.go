@@ -6,14 +6,14 @@ package grpc_opentracing
 import (
 	"context"
 
-	"github.com/grpc-ecosystem/go-grpc-middleware"
-	"github.com/grpc-ecosystem/go-grpc-middleware/tags"
-	"github.com/grpc-ecosystem/go-grpc-middleware/util/metautils"
+	"github.com/fabric-creed/go-grpc-middleware"
+	"github.com/fabric-creed/go-grpc-middleware/tags"
+	"github.com/fabric-creed/go-grpc-middleware/util/metautils"
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 	"github.com/opentracing/opentracing-go/log"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/grpclog"
 )
 
 var (

@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	grpc_logging "github.com/grpc-ecosystem/go-grpc-middleware/logging"
-	"github.com/grpc-ecosystem/go-grpc-middleware/logging/zap/ctxzap"
+	grpc_logging "github.com/fabric-creed/go-grpc-middleware/logging"
+	"github.com/fabric-creed/go-grpc-middleware/logging/zap/ctxzap"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"google.golang.org/grpc/codes"
+	"github.com/fabric-creed/grpc/codes"
 )
 
 var (

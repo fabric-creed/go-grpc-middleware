@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"sync"
 
-	"google.golang.org/grpc/grpclog"
+	"github.com/fabric-creed/grpc/grpclog"
 )
 
 // SettableLoggerV2 is thread-safe.

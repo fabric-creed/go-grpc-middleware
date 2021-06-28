@@ -7,8 +7,8 @@ import (
 	"context"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/codes"
 )
 
 var (

@@ -4,11 +4,11 @@ import (
 	"time"
 
 	"github.com/go-kit/log"
-	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	"github.com/grpc-ecosystem/go-grpc-middleware/logging/kit"
-	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
+	grpc_middleware "github.com/fabric-creed/go-grpc-middleware"
+	"github.com/fabric-creed/go-grpc-middleware/logging/kit"
+	grpc_ctxtags "github.com/fabric-creed/go-grpc-middleware/tags"
 
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 )
 
 var (

@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"strings"
 
-	"google.golang.org/grpc/metadata"
+	"github.com/fabric-creed/grpc/metadata"
 )
 
 const (

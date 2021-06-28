@@ -4,13 +4,13 @@ import (
 	"context"
 	"log"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/codes"
+	"github.com/fabric-creed/grpc/status"
 
-	grpc_auth "github.com/grpc-ecosystem/go-grpc-middleware/auth"
-	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
-	pb "github.com/grpc-ecosystem/go-grpc-middleware/testing/testproto"
+	grpc_auth "github.com/fabric-creed/go-grpc-middleware/auth"
+	grpc_ctxtags "github.com/fabric-creed/go-grpc-middleware/tags"
+	pb "github.com/fabric-creed/go-grpc-middleware/testing/testproto"
 )
 
 func parseToken(token string) (struct{}, error) {

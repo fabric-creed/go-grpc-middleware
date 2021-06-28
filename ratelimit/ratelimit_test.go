@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"google.golang.org/grpc"
+	"github.com/fabric-creed/grpc"
 
 	"github.com/stretchr/testify/assert"
 )

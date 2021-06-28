@@ -6,9 +6,9 @@ import (
 	"os"
 	"testing"
 
-	grpc_logsettable "github.com/grpc-ecosystem/go-grpc-middleware/logging/settable"
+	grpc_logsettable "github.com/fabric-creed/go-grpc-middleware/logging/settable"
 	"github.com/stretchr/testify/assert"
-	"google.golang.org/grpc/grpclog"
+	"github.com/fabric-creed/grpc/grpclog"
 )
 
 func ExampleSettableLoggerV2_init() {

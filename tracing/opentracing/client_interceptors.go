@@ -8,13 +8,13 @@ import (
 	"io"
 	"sync"
 
-	"github.com/grpc-ecosystem/go-grpc-middleware/util/metautils"
+	"github.com/fabric-creed/go-grpc-middleware/util/metautils"
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 	"github.com/opentracing/opentracing-go/log"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/metadata"
+	"github.com/fabric-creed/grpc"
+	"github.com/fabric-creed/grpc/grpclog"
+	"github.com/fabric-creed/grpc/metadata"
 )
 
 // UnaryClientInterceptor returns a new unary client interceptor for OpenTracing.
